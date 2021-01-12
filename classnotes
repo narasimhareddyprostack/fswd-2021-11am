@@ -46,3 +46,19 @@ Variable       - properties
 Function        - methods
 class          - properties + Methos  
 object 
+
+
+C R U  D  
+
+how to create variable ? 
+how to read variable?
+how to update variable?
+
+how to delete/ nullify the variable?
+
+var x = 10; 
+x 
+
+x = 20 
+
+delete x 

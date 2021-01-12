@@ -39,3 +39,10 @@ head                        <head></head>    - Logical part of web page
 
 body                        <body>           - Today in web page body / phsical info 
 
+
+
+
+Variable       - properties
+Function        - methods
+class          - properties + Methos  
+object 

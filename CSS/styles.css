@@ -10,3 +10,9 @@ p {
 h5 {
   color: red;
 }
+
+button {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}

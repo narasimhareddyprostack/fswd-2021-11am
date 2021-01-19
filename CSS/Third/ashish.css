@@ -1,0 +1,20 @@
+h1,
+h2,
+h3,
+p {
+  color: skyblue;
+
+  background-color: springgreen;
+  font-weight: 100;
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#kgf2 {
+  background-color: white;
+}
+
+.h2TagClass {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}

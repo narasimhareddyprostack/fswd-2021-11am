@@ -1,6 +1,4 @@
 function wish() {
-  wish();
-  console.log("hello");
+  console.log(this);
 }
-
 wish();

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Learning Exeception Handling</h1>
+
+    <script>
+      try {
+        function order() {}
+        document.write("GM", "<br/>");
+        order();
+        document.write("GA");
+      } catch (error) {
+        document.write(error, "<br/>");
+        document.write(error.name, "<br/>");
+        document.write(error.message, "<br/>");
+        document.write(error.stack, "<br/>");
+      } /* finally {
+        document.write("Clearing console");
+      } */
+    </script>
+  </body>
+</html>

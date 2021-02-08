@@ -9,7 +9,7 @@ class BankCustomer {
   getBal() {
    
     console.log("New Accout Opened.. for:", this.custName);
-  }
+  }   
   
 }
 

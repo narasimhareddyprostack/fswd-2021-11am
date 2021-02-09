@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onload="pageLoad()">
+    <h1>Create HTML Element Using DOM - Manipulation</h1>
+    <select id="selTag"></select>
+    <button onclick="removeEle()">Remove</button>
+  </body>
+  <script>
+    function pageLoad() {
+      let selTag = document.getElementById("selTag");
+      //create Option Tag
+      let optTag = document.createElement("option");
+      optTag.text = "KA";
+      let optTag1 = document.createElement("option");
+      optTag1.text = "GJ";
+      selTag.appendChild(optTag);
+      selTag.appendChild(optTag1);
+      selTag.style.backgroundColor = "green";
+    }
+
+    function removeEle() {
+      let selTag = document.getElementById("selTag");
+      selTag.remove();
+    }
+  </script>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="events.css" />
+    <title>Js Events</title>
+  </head>
+  <body>
+    <h1>Js Events</h1>
+    <div class="onmouseover">
+      <label
+        >OnMouseover
+        <p>mouse over to change button backgroud color</p></label
+      >
+      <button id="mouse" onmouseover="mouseover()" class="mouseover">
+        Mouse over
+      </button>
+    </div>
+    <div class="onmouseout">
+      <label
+        >OnMouseout
+        <p>mouse over to change button backgroud color</p></label
+      >
+      <button id="mouseouts" onmouseout="mouseouter()" class="mouseout">
+        Mouse out
+      </button>
+    </div>
+    <div class="onclick">
+      <label
+        >Onclik
+        <p>click to change button backgroud color</p></label
+      >
+      <button id="clicks" onclick="clicker()" class="click">Onclick</button>
+    </div>
+    <div class="ondbclick">
+      <label
+        >ondbclick
+        <p>click to change input backgroud color</p></label
+      >
+      <button
+        id="dblclick"
+        ondblclick="dbclicker()"
+        class="dbclick"
+        type="text"
+      >
+        ondblclick
+      </button>
+    </div>
+    <div class="onfocus">
+      <label
+        >Onfocus
+        <p>change input background color</p></label
+      >
+      <input
+        id="focuss"
+        onfocus="focuser()"
+        onmouseout="fun()"
+        type="text"
+        class="focus"
+      />
+    </div>
+    <div class="onblur">
+      <label
+        >Onblur
+        <p>change lower case to upper case onblur Events</p></label
+      >
+      <input
+        type="text"
+        id="blurs"
+        onblur="blurer()"
+        onfocus="focuser()"
+        onchange="funone()"
+        class="blur"
+        placeholder="test"
+      />
+    </div>
+  </body>
+  <script src="events.js" type="text/javascript"></script>
+</html>

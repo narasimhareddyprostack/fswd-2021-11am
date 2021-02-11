@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.onmouseover {
+  height: 61px;
+  width: 304px;
+  margin-left: 50px;
+  position: relative;
+  left: 20px;
+  top: 62px;
+}
+.onmouseout {
+  height: 61px;
+  width: 304px;
+  position: relative;
+  left: 460px;
+  top: -6px;
+}
+
+.onclick {
+  height: 61px;
+  width: 304px;
+  position: relative;
+  left: 904px;
+  top: -70px;
+}
+.ondbclick {
+  height: 61px;
+  width: 304px;
+  position: relative;
+  left: 70px;
+  top: 43px;
+}
+.onfocus {
+  height: 61px;
+  width: 304px;
+  position: relative;
+  left: 453px;
+  top: -16px;
+}
+.onblur {
+  height: 61px;
+  width: 304px;
+  position: relative;
+  left: 915px;
+  top: -74px;
+}
+.onblur,
+.onclick,
+.ondbclick,
+.onfocus,
+.onmouseout,
+.onmouseover {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 23px;
+  text-align: left;
+}
+.click,
+.mouseover,
+.mouseout,
+.dbclick,
+.focus,
+.blur {
+  align-content: center;
+  border-radius: solid, black;
+  color: blanchedalmond;
+}
+.mouseover {
+  background-color: rgb(63, 63, 160);
+  width: 100px;
+  height: 23px;
+}
+.mouseout {
+  background-color: chartreuse;
+  width: 100px;
+  height: 23px;
+}
+.click {
+  background-color: rgb(24, 21, 21);
+  width: 100px;
+  height: 23;
+}
+.dbclick {
+  background-color: rgb(24, 24, 129);
+  width: 100px;
+  height: 23px;
+}
+.focus {
+  background-color: blueviolet;
+  width: 180px;
+  height: 20px;
+  border: solid, black;
+  margin: auto;
+}
+.blur {
+  background-color: white;
+  color: black;
+  width: 180px;
+  height: 20px;
+  border: solid;
+  margin: auto;
+}

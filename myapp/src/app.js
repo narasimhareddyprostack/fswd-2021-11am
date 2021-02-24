@@ -1,50 +1,20 @@
-import React, { Component } from "react";
-import Navbar from "./Navbar/Navbar";
-class App extends Component {
-  state = {
-    msg: "Hello",
-  };
-  changeMsg(value) {
-    this.setState({ msg: value });
-  }
-  render() {
-    return (
-      <>
-        <Navbar />
-        <div className="container mt-5">
-          <div className="row">
-            <div className="col-md-6">
-              <div className="card">
-                <div className="card-header">
-                  <h4>Messge: {this.state.msg}</h4>
-                </div>
-                <div className="card-body">
-                  <button
-                    className="btn btn-success mr-3"
-                    onClick={this.changeMsg.bind(this, 1)}
-                  >
-                    GM
-                  </button>
-                  <button
-                    className="btn btn-primary mr-3"
-                    onClick={this.changeMsg.bind(this, 2)}
-                  >
-                    GA
-                  </button>
-                  <button
-                    className="btn btn-info"
-                    onClick={this.changeMsg.bind(this, 3)}
-                  >
-                    GN
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
-    );
-  }
+import React from "react";
+import Registration from "./components/Registration/Registration";
+
+import Login from "./components/Registration/Login";
+
+function App() {
+  return (
+    <div>
+      {/* <Registration /> */}
+      <div className="navbar navbar-dark bg-dark">
+        <a href="/'" className="navbar-brand">
+          Yellow Class - Mobile Registration
+        </a>
+      </div>
+      <Login />
+    </div>
+  );
 }
 
 export default App;

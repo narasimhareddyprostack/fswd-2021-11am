@@ -1,38 +1,39 @@
 import React, { Component } from "react";
+import Navbar from "./Navbar/Navbar";
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      message: "Hello",
-    };
-  }
-
-  singleHandler = (value) => {
-    this.setState({ message: value });
+  state = {
+    msg: "Hello",
   };
+  changeMsg(value) {
+    this.setState({ msg: value });
+  }
   render() {
     return (
-      <div>
-        <nav className="navbar navbar-dark bg-dark">
-          <a href="/" className="navbar-brand">
-            React Example
-          </a>
-        </nav>
-        <div className="conatiner m-5">
+      <>
+        <Navbar />
+        <div className="container mt-5">
           <div className="row">
             <div className="col-md-6">
               <div className="card">
-                <div className="card-header"> {this.state.message}</div>
+                <div className="card-header">
+                  <h4>Messge: {this.state.msg}</h4>
+                </div>
                 <div className="card-body">
                   <button
-                    className="btn btn-success mr-5"
-                    onClick={this.singleHandler.bind(this, "GM")}
+                    className="btn btn-success mr-3"
+                    onClick={this.changeMsg.bind(this, 1)}
                   >
                     GM
                   </button>
                   <button
-                    className="btn btn-primary"
-                    onClick={this.singleHandler.bind(this, "Good Night")}
+                    className="btn btn-primary mr-3"
+                    onClick={this.changeMsg.bind(this, 2)}
+                  >
+                    GA
+                  </button>
+                  <button
+                    className="btn btn-info"
+                    onClick={this.changeMsg.bind(this, 3)}
                   >
                     GN
                   </button>
@@ -41,20 +42,7 @@ class App extends Component {
             </div>
           </div>
         </div>
-        {/*  <h1> Message :{this.state.message}</h1>
-        <button
-          className="btn btn-success mr-5"
-          onClick={this.singleHandler.bind(this, "GM")}
-        >
-          GM
-        </button>
-        <button
-          className="btn btn-primary"
-          onClick={this.singleHandler.bind(this, "Good Night")}
-        >
-          GN
-        </button> */}
-      </div>
+      </>
     );
   }
 }

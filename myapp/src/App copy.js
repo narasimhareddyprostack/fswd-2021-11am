@@ -1,15 +1,18 @@
 import React from "react";
+import Registration from "./components/Registration/Registration";
 
-import ParentCard from "./TwoWay/Card/ParentCard";
+import Login from "./components/Registration/Login";
+
 function App() {
   return (
     <div>
+      {/* <Registration /> */}
       <div className="navbar navbar-dark bg-dark">
         <a href="/'" className="navbar-brand">
-          Two Data Binding
+          Yellow Class - Mobile Registration
         </a>
       </div>
-      <ParentCard />
+      <Login />
     </div>
   );
 }

@@ -3,8 +3,9 @@ import CompC from "./CompC";
 let CompB = (props) => {
   return (
     <React.Fragment>
-      <h1> CompB</h1>
       <hr />
+      <h1> CompB</h1>
+
       <pre>{JSON.stringify(props)}</pre>
       <CompC empData={props.empData} />
     </React.Fragment>

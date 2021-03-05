@@ -4,9 +4,9 @@ class OrderDetails {
   };
 }
 class OrderStatus extends OrderDetails {
-  /* orderDetails = () => {
-    console.log("Child Class - Method");
-  }; */
+ /* orderDetails = () => {
+  console.log("Child Class - Method");
+  };  */
 }
 let newOrder = new OrderStatus();
 newOrder.orderDetails();

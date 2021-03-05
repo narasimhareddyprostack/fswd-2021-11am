@@ -1,21 +1,16 @@
-import React, { Component } from "react";
-/* import HomePage from "./ConditionalRendering/HomePage";
- */
-import PreferredLoc from "./ConditionalRendering/PreferredLoc";
-import SelectLoc from "./ConditionalRendering/SelectLoc";
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <nav className="navbar navbar-dark bg-dark">
-          <a href="/"> React Conditional Rending</a>
-        </nav>
-        {/*  <HomePage /> */}
-        {/*  <PreferredLoc /> */}
-        <SelectLoc />
-      </div>
-    );
-  }
+import React from "react";
+
+import { EmployeeApp } from "./Employee-List/EmployeeApp";
+
+function App() {
+  return (
+    <>
+      <nav className="navbar nav-dark bg-dark">
+        <a href="/"> React List Rending</a>
+      </nav>
+      <EmployeeApp />
+    </>
+  );
 }
 
 export default App;

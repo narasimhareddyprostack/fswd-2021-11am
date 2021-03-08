@@ -41,10 +41,9 @@ class ContactApp extends React.Component {
           <div className="row">
             <div className="col">
               <p className="h4">
-                JavaScript fetch vs React JS Axios - Prepare docJavaScript fetch
-                vs React JS Axios - Prepare docJavaScript fetch vs React JS
-                Axios - Prepare docJavaScript fetch vs React JS Axios - Prepare
-                doc
+                Your all-in-one online address book for iOS, Android, web, Mac
+                OS, & Gmail. Effortlessly store & maintain your contacts with
+                Contacts+. doc
               </p>
             </div>
           </div>

@@ -50,13 +50,13 @@ class ContactApp extends React.Component {
         </div>
         <div className="container">
           <div className="row">
-            <div className="col-md-9">
+            <div className="col-md-8">
               <ContactList
                 contactData={this.state.contacts}
                 pullData={this.pullData}
               />
             </div>
-            <div className="col-md-3">
+            <div className="col-md-4">
               <ContactCard selectedContact={this.state.selectedContact} />
             </div>
           </div>

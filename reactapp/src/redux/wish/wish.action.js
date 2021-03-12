@@ -1,30 +1,28 @@
-//action types
-/*
-using this action types, our reducer will update the store.
-*/
-
-const GOODMORNING = "GOODMORNING";
+//create Action Types
+const GOODMONRING = "GOODMONRING";
 const GOODAFTERNOON = "GOODAFTERNOON";
 const GOODNIGHT = "GOODNIGHT";
-sayGMAction = () => {
+
+//create Actions
+let sayGMAction = () => {
+  console.log("Testing 123");
   return {
-    type: GOODMORNING,
+    type: GOODMONRING,
   };
 };
-sayGAAction = () => {
+let sayGAAction = () => {
   return {
     type: GOODAFTERNOON,
   };
 };
-
-sayGNAction = () => {
+let sayGNAction = () => {
   return {
     type: GOODNIGHT,
   };
 };
-
+//export action - values
 export {
-  GOODMORNING,
+  GOODMONRING,
   GOODAFTERNOON,
   GOODNIGHT,
   sayGMAction,

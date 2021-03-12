@@ -1,16 +1,17 @@
-/* let initialState = {
+import { GOODMONRING, GOODAFTERNOON, GOODNIGHT } from "./wish.action";
+let initialState = {
   message: "Hello,",
 };
-wishReducer = (state = initialState, action) => {
+let wishReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "GoodMorning":
-      return { message: "GoodMorning" };
-    case "GoodMorning":
-      return { message: "GoodMorning" };
-    case "GoodMorning":
-      return { message: "GoodMorning" };
+    case GOODMONRING:
+      return { message: "Good Morning - Reducer" };
+    case GOODAFTERNOON:
+      return { message: "Good Afternoon -Reducer" };
+    case GOODNIGHT:
+      return { message: "Good Night - Reducer" };
     default:
       return state;
   }
 };
- */
+export { wishReducer };

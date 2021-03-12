@@ -7,17 +7,21 @@ import {
 import { useSelector, useDispatch } from "react-redux";
 let WishMessage = () => {
   const dispatch = useDispatch();
-  sayGM = () => {
+  let message = useSelector((state) => {
+    return state.wishMessage;
+  });
+  let sayGM = () => {
+    console.log("Testing First");
     //dispatch redux action
-    dispatch(sayGMAction);
+    dispatch(sayGMAction());
   };
-  sayGA = () => {
+  let sayGA = () => {
     //dispatch redux action
-    dispatch(sayGAAction);
+    dispatch(sayGAAction());
   };
-  sayGN = () => {
+  let sayGN = () => {
     //dispatch redux action
-    dispatch(sayGNAction);
+    dispatch(sayGNAction());
   };
   return (
     <React.Fragment>
@@ -27,18 +31,17 @@ let WishMessage = () => {
           <div className="col-md-8">
             <div className="card">
               <div className="card-header">
-                <h4>Message : Hello</h4>
+                <pre>{JSON.stringify(message)}</pre>
+                <h4>Message : {message.message} </h4>
               </div>
               <div className="card-body">
-                <button className="btn btn-primary ml-3" onClick={this.sayGM}>
+                <button className="btn btn-primary ml-3" onClick={sayGM}>
                   GM
                 </button>
-                <button className="btn btn-success ml-3" onClick={this.sayGA}>
-                  {" "}
+                <button className="btn btn-success ml-3" onClick={sayGA}>
                   GA
                 </button>
-                <button className="btn btn-danger ml-3" onClick={this.sayGN}>
-                  {" "}
+                <button className="btn btn-danger ml-3" onClick={sayGN}>
                   GN
                 </button>
               </div>

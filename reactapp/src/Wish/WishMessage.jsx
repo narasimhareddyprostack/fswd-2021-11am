@@ -5,19 +5,31 @@ import {
   sayGNAction,
 } from "../redux/wish/wish.action";
 import { useSelector, useDispatch } from "react-redux";
+
 let WishMessage = () => {
   const dispatch = useDispatch();
-  let message = useSelector((state) => {
+
+  let x = useSelector((state) => {
     return state.wishMessage;
   });
+  let counter = useSelector((state) => {
+    return state.counter;
+  });
+
+  let state = useSelector((state) => {
+    return state;
+  });
+  let newGM = () => {
+    //logic
+  };
   let sayGM = () => {
     console.log("Testing First");
     //dispatch redux action
-    dispatch(sayGMAction());
+    dispatch(sayGMAction(100));
   };
   let sayGA = () => {
     //dispatch redux action
-    dispatch(sayGAAction());
+    dispatch(sayGAAction(100));
   };
   let sayGN = () => {
     //dispatch redux action
@@ -31,8 +43,10 @@ let WishMessage = () => {
           <div className="col-md-8">
             <div className="card">
               <div className="card-header">
-                <pre>{JSON.stringify(message)}</pre>
-                <h4>Message : {message.message} </h4>
+                <pre>{JSON.stringify(x)}</pre>
+                <pre>{JSON.stringify(counter)}</pre>
+                <pre>{JSON.stringify(state)}</pre>
+                <h4>Message : {x.message} </h4>
               </div>
               <div className="card-body">
                 <button className="btn btn-primary ml-3" onClick={sayGM}>

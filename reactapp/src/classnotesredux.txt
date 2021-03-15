@@ -1,0 +1,91 @@
+how to dispatch action?
+
+1.What is actions?
+return actionable object?
+
+  --- fuction addToCart(){
+		return {
+				type:ADDTOCART_SUCCESS
+		
+			}
+		}
+		
+  -- to invoke Backend API: we get data
+  -- data/payload, and type
+		return {
+		type:ADDTOCART_SUCCESS,
+		payload:cartData
+		}
+		
+		
+2. How to dispatch action from react view?
+- useDispatch() hook method from -react-redux package
+
+import {useDispatch} from 'react-redux'
+
+
+let dispatch = useDispatch();
+
+//dispatch(sayGMAction())
+
+
+3.What is redux -- reducer?
+reducer is pure funciton it take two parameters
+	1.state
+	2.action
+	
+let wishMessage = (state, action)=>{
+
+	switch(action.type){
+		case GM:
+		return {state:}
+	}
+}
+
+
+4. Why we required rootReducer?
+ -- combine all reducer - combine all state's 
+ 
+ 
+	import {combineReducers} from 'redux'
+ 
+    let rootReducer = combineReducers({})
+	let rootReducer = combineReducers({ message:messageReducer})
+	let rootReducer = combineReducers({ message:messageReducer
+										couter :couterReducer
+										})
+										
+    export {rootReducer}
+	
+5. why we required - composeWithDevTools()?
+
+   while creating Redux store - we are passing rootReducer and , 
+   
+		ie composeWithDevTools())
+		
+		
+6. What is Redux Store?
+
+   how to create Redux Store
+
+   let store = createStore(rootReducer, composeWithDevTools())
+   export {store}
+   
+7.how to read/access redux store (state values)
+
+	- useSelector() hook method from 'react-redux'
+	
+	let value = useSelector();
+	let value = useSelector( ()=>{} );
+	let value = useSelector( (state)=>{return state.counter} );
+
+	
+8.how to connect react app to redux store.
+
+using <Provider> its from 'react-redux' package.
+
+	-- import { Provider} from 'react-redux'
+	
+	<Provider>
+		<rootComp/>
+	</Provider>

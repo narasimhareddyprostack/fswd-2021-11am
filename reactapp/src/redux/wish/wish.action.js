@@ -4,10 +4,11 @@ const GOODAFTERNOON = "GOODAFTERNOON";
 const GOODNIGHT = "GOODNIGHT";
 
 //create Actions
-let sayGMAction = () => {
+let sayGMAction = (value) => {
   console.log("Testing 123");
   return {
     type: GOODMONRING,
+    payload: value,
   };
 };
 let sayGAAction = () => {

@@ -19,7 +19,7 @@ return actionable object?
 		
 		
 2. How to dispatch action from react view?
-- useDispatch() hook method from -react-redux package
+- useDispatch() hook method from -  react-redux package
 
 import {useDispatch} from 'react-redux'
 

@@ -1,16 +1,25 @@
 import React from "react";
-/* import Counter from "./components-one/Counter"; */
-import { Provider } from "react-redux";
+/* import { Provider } from "react-redux";
 import store from "./redux/store";
+ */
 
-import ProductList from "./Components-one/ProductList";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from "./Routing-Example/Components/Navbar";
+import ContactList from "./Axios-ContactApp/ContactList";
+
+import { EmployeeApp } from "./Employee-List/EmployeeApp";
 function App() {
   return (
     <React.Fragment>
-      <Provider store={store}>
-        {/*   <Counter /> */}
-        <ProductList />
-      </Provider>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path="/home" component={ContactList} />
+          <Route exact path="/aboutus" component={EmployeeApp} />
+          <Route exact path="/contactdata" component={ContactList} />
+          <Route exact path="/contactus" component={ContactList} />
+        </Switch>
+      </Router>
     </React.Fragment>
   );
 }

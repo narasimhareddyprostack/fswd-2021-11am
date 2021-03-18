@@ -6,7 +6,7 @@ let CompC = (props) => {
       <h1> CompC</h1>
 
       <pre>{JSON.stringify(props)}</pre>
-      <h4>Data from App.js : Emp Name :{props.empData.name}</h4>
+      <h4>Data from App.js : Emp Name :{props.name}</h4>
     </React.Fragment>
   );
 };

@@ -1,12 +1,16 @@
 import React from "react";
-import Employee from "./Hooks/Employee";
+import Counter from "./Hooks/Counter/Counter";
+import Message from "./Hooks/Wish/Message";
+import Product from "./Hooks/Product/Product";
 function App() {
   return (
     <div>
       <nav className="navbar navbar-dark bg-dark">
         <a href="/"> React Hooks</a>
       </nav>
-      <Employee />
+      <Counter />
+      <Message />
+      <Product />
     </div>
   );
 }

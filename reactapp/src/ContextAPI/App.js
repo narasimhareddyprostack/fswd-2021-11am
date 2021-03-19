@@ -1,6 +1,6 @@
 /* import ParentComp from "./components/ParentComp"; */
-import { UserContext, MethodContext } from "./ContextAPI/UserContext";
-import CompA from "./ContextAPI/CompA";
+import { UserContext, MethodContext } from "./UserContext";
+import CompA from "./CompA";
 let App = () => {
   let emp = {
     name: "Chiru",

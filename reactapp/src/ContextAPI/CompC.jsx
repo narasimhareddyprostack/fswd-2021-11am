@@ -9,7 +9,13 @@ let CompC = () => {
       <UserContext.Consumer>
         {(emp) => (
           <MethodContext.Consumer>
-            {(getHike) => <span>{JSON.stringify(getHike())}</span>}
+            {(getHike) => (
+              <span>
+                {/*  {JSON.stringify(getHike())} {JSON.stringify(emp)} */}
+                <h1> Employee Name: {emp.name}</h1>
+                <h1> Employee Salary: {emp.sal}</h1>
+              </span>
+            )}
           </MethodContext.Consumer>
         )}
       </UserContext.Consumer>

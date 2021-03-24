@@ -1,13 +1,14 @@
-import ImgEx from "./UseRefEx/ImgEx";
+import React from "react";
+
+import ContactApp from "./FunCompContact/ContactApp";
 let App = () => {
   return (
-    <>
+    <React.Fragment>
       <nav className="navbar navbar-dark bg-dark">
-        <a href="/"> React - UseRef Example</a>
+        <a href="/"> Contact App - Function Components</a>
       </nav>
-      <hr />
-      <ImgEx />
-    </>
+      <ContactApp />
+    </React.Fragment>
   );
 };
 export default App;

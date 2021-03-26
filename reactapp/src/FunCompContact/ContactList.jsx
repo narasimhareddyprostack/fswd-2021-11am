@@ -3,6 +3,7 @@ let ContactList = (props) => {
   let pushData = (contact) => {
     props.pullData(contact);
   };
+  
   return (
     <React.Fragment>
       <pre>{JSON.stringify(props.contacts)}</pre>
@@ -26,7 +27,7 @@ let ContactList = (props) => {
                       return (
                         <tr
                           key={contact.login.uuid}
-                          onClick={pushData.bind(this, contact)}
+                          onMouseOver={pushData.bind(this, contact)}
                         >
                           <td>{contact.name.first}</td>
                           <td>

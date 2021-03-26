@@ -63,11 +63,42 @@ useEffect(()=>{
 		 })
 		 .catch((err)=>{...contact, errMessage:err})
 })
-return  <React.Fragment></React.Fragment>
+return  <React.Fragment>
+		<div className="container mt-5">
+		<div className="row">
+			<div className="col-md-8">
+				<ContactList contacts={contact.contacts}/>
+			</div>
+			<div className="col-md-4">
+				<Contactcard />
+			</div>
+		</div>
+		</div>
+		
+		</React.Fragment>
 
 }
 
 export default ContactApp;		  
 
+
+let ContactList = (props)=>{
+	
+	return <React.Fragment>
+		<div class="container">
+		<div class="row">
+			<div className="col">
+				<table>
+					<thead></thead>
+					<tbody></tbody>
+				</table>
+			</div>
+		</div>
+		</div>
+		
+	</React.Fragment>
+}
+
+export default ContactList
 		  
 		  

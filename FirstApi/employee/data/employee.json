@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "first_name": "Nicolai",
+    "last_name": "Peeke",
+    "email": "npeeke0@yandex.ru",
+    "gender": "Agender",
+    "location": "Reszel"
+  },
+  {
+    "id": 2,
+    "first_name": "Allie",
+    "last_name": "Reichartz",
+    "email": "areichartz1@so-net.ne.jp",
+    "gender": "Polygender",
+    "location": "Chepo"
+  },
+  {
+    "id": 3,
+    "first_name": "Kane",
+    "last_name": "Soutter",
+    "email": "ksoutter2@patch.com",
+    "gender": "Male",
+    "location": "Futang"
+  },
+  {
+    "id": 4,
+    "first_name": "Berny",
+    "last_name": "Kaemena",
+    "email": "bkaemena3@biblegateway.com",
+    "gender": "Bigender",
+    "location": "Washington"
+  },
+  {
+    "id": 5,
+    "first_name": "Bee",
+    "last_name": "Eddowes",
+    "email": "beddowes4@mozilla.com",
+    "gender": "Agender",
+    "location": "Obas"
+  },
+  {
+    "id": 6,
+    "first_name": "Northrop",
+    "last_name": "Foakes",
+    "email": "nfoakes5@columbia.edu",
+    "gender": "Male",
+    "location": "Szczawnica"
+  },
+  {
+    "id": 7,
+    "first_name": "Arabela",
+    "last_name": "Cregeen",
+    "email": "acregeen6@weebly.com",
+    "gender": "Agender",
+    "location": "Dachnoye"
+  },
+  {
+    "id": 8,
+    "first_name": "Gabriella",
+    "last_name": "Byfield",
+    "email": "gbyfield7@odnoklassniki.ru",
+    "gender": "Male",
+    "location": "Luoluopu"
+  },
+  {
+    "id": 9,
+    "first_name": "Joni",
+    "last_name": "Bealing",
+    "email": "jbealing8@loc.gov",
+    "gender": "Genderqueer",
+    "location": "Cabittaogan"
+  },
+  {
+    "id": 10,
+    "first_name": "Deeann",
+    "last_name": "Palphramand",
+    "email": "dpalphramand9@jigsy.com",
+    "gender": "Polygender",
+    "location": "San Juan"
+  }
+]

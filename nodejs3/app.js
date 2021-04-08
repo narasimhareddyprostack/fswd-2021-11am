@@ -2,6 +2,7 @@
 import express from "express";
 import morgan from "morgan";
 import chalk from "chalk";
+
 const app = express();
 const miles = 18;
 const calculateFeet = (miles) => miles * 5280;
